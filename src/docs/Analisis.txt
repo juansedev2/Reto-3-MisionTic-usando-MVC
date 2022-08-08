@@ -1,0 +1,16 @@
+Luego de la lectura de las indicaciones dadas en el documento del reto 3, se manifiestan las siguientes observaciones:
+
+	POO:
+
+	O No se explica concretamente la razón de la creación de una super clase llamada ObjetoGeográfico, no se justifica su existencia debido a que no se manifiesta
+	su propósito, atributos y métodos. De manera implícita solo se ve que esta clase cargará con un único atributo llamado el nombre y realmente no se observa sentido lógico a su existencia.
+	
+	
+	Lógica:
+
+	o Se trabaja cierta lógica igual a la manifestada en el reto 2, en cuanto a la información solicitada, tratamiento e información devuelta. La novedad es la interfaz gráfica.
+	o El número de cuerpos de agua realmente no es necesario, no tiene sentido limitar esa funcionalidad.
+	o Las entradas y salidas no corresponden a los resultados adecuados en comparación con el reto 2
+
+
+Se procede a realizar la construcción de la aplicación.

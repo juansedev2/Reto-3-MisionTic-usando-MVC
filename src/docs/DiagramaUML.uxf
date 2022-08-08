@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="15.0.0">
+  <zoom_level>7</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>119</x>
+      <y>21</y>
+      <w>224</w>
+      <h>105</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Abstract class&gt;&gt;
+Package::mundo
+ObjetoGeografico
+--
+# municipio: String
+--
++ ObjetoGeografico(municipio: String)
++ getMunicipio() : String
++ setMunicipio(municipio : String)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>0</x>
+      <y>371</y>
+      <w>448</w>
+      <h>308</h>
+    </coordinates>
+    <panel_attributes>Package::mundo
+CuerpoDeAgua
+--
+- nombre: String
+- identificacion : String
+- tipo_cuerpo_agua : String
+- tipo_agua : String
+- numero_clasificacion : float
+- clasificacion : String
+--
++ CuerpoDeAgua(nombre : String, identificacion : String, tipo_cuerpo_agua : String, 
+tipo_agua : String, numero_clasificacion : float, municipio: String)
++ getNombre(): String
++ setNombre(nombre: String)
++ getIdentificacion(): String
++ setIdentificacion(identificacion : String)
++ getTipo_cuerpo_agua() : String
++ setTipo_cuerpo_agua(tipo_cuerpo_agua : String)
++ getTipo_agua() : String
++ setTipo_agua(tipo_agua : String)
++ getNumero_clasificacion() : float
++ setNumero_clasificacion(numero_clasificacion : float)
++ getClasificacion() : String
++ setClasificacion()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>679</x>
+      <y>378</y>
+      <w>406</w>
+      <h>294</h>
+    </coordinates>
+    <panel_attributes>Package::mundo
+OperadorCuerpoDeAgua
+--
+- lista_cuerpos_agua : ArrayList&lt;CuerpoDeAgua&gt;
+- cadena_datos : String
+- total_inferiores : int
+- total_medios : int	
+--
++ OperadorCuerpoDeAgua()
++ getLista_cuerpos_agua() : ArrayList&lt;CuerpoDeAgua&gt;
++ setLista_cuerpos_agua(lista_cuerpos_agua: ArrayList&lt;CuerpoDeAgua&gt;)
++ getCadena_datos(): String
++ setCadena_datos(cadena_datos : String)
++ getTotal_inferiores() : int
++ setTotal_inferiores(total_inferiores(total_inferiores: int)
++ getTotal_medios() : int
++ setTotal_medios(total_medios: int)
+- dividirCadena(): String
++ agregarCuerpoDeAgua()
++ calcularMediosAgua()
++ indicarMedios() : String
++ indicarCuerposBajo() : String
++ devolverNivelesCuerpos() : String</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1281</x>
+      <y>378</y>
+      <w>280</w>
+      <h>224</h>
+    </coordinates>
+    <panel_attributes>Package::controlador
+Controlador
+--
+- cadena_datos : String
+- operadorAgua : OperadorCuerpoDeAgua
+--
++ Controlador()
++ getCadena_datos(): String
++ setCadena_datos(cadena_datos : String)
++ getOperadorAgua(): OperadorAgua
++ setOperadorAgua(operadorAgua: OperadorAgua)
++ agregarCuerpo()
++ devolverInferiores(): String
++ devolverMedios(): String
++ devolverMasBajo(): String
++ reiniciarOperador()
++ devolverNivelesCompletos(): String
++ realizarCalculosMedios()
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1848</x>
+      <y>238</y>
+      <w>238</w>
+      <h>595</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;final&gt;&gt;
+Package::interfazApp
+InterfazApp
+--
+- completo : boolean
+- total_cuerpos: int
+- controlador: Controlador
+- jButton1 : javax.swing.JButton
+- jButton2 : javax.swing.JButton
+- jButton3 : javax.swing.JButton
+- jButton4 : javax.swing.JButton
+- jButton5 : javax.swing.JButton
+- jLabel1 : javax.swing.JLabel
+- jLabel2 : javax.swing.JLabel
+- jLabel3 : javax.swing.JLabel
+- jLabel4 : javax.swing.JLabel
+- jLabel5 : javax.swing.JLabel
+- jLabel6 : javax.swing.JLabel
+- jLabel7 : javax.swing.JLabel
+- jLabel8 : javax.swing.JLabel
+- jLabel9 : javax.swing.JLabel
+- jScrollPanel1 : javax.swing.JScrollPane
+- jScrollPanel3 : javax.swing.JScrollPane
+- jTextArea1 : javax.swing.JTextArea
+- jTextArea3 : javax.swing.JTextArea
+- jTextField1 : javax.swing.jTextField
+- jTextField2 : javax.swing.jTextField
+- jTextField3 : javax.swing.jTextField
+- jTextField4 : javax.swing.jTextField
+- jTextField5 : javax.swing.jTextField
+- jTextField6 : javax.swing.jTextField
+--
++ InterfazApp()
+_+ main()_
+- jButton1ActionPerformed()
+- jButton2ActionPerformed()
+- jButton3ActionPerformed()
+- jButton4ActionPerformed()
+- jButton5ActionPerformed()
+- reiniciarCampos()
+- ocultarEdicionTextArea()
+- llenarTextAreaEntrada(contenido: String)
+- llenarTextAreaSalida(contenido: String)
+- vaciarAreasTexto()
+- bloquearBotones()
+- desbloquearBotones()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>469</x>
+      <y>749</y>
+      <w>231</w>
+      <h>133</h>
+    </coordinates>
+    <panel_attributes>Package::Java.Util.ArrayList (API JAVA)
+ArrayList
+--
+....
+--
+....
+--</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>224</x>
+      <y>119</y>
+      <w>21</w>
+      <h>266</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;360.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>560</x>
+      <y>413</y>
+      <w>133</w>
+      <h>350</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>170.0;10.0;10.0;10.0;10.0;480.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>441</x>
+      <y>371</y>
+      <w>252</w>
+      <h>35</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=
+m2=1..*
+&lt; contiene</panel_attributes>
+    <additional_attributes>10.0;20.0;340.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1078</x>
+      <y>385</y>
+      <w>210</w>
+      <h>35</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m2=1...1
+&lt; contiene</panel_attributes>
+    <additional_attributes>10.0;20.0;280.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1554</x>
+      <y>252</y>
+      <w>308</w>
+      <h>154</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m2=1...1
+&lt; contiene</panel_attributes>
+    <additional_attributes>10.0;200.0;330.0;200.0;330.0;10.0;420.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1855</x>
+      <y>0</y>
+      <w>231</w>
+      <h>133</h>
+    </coordinates>
+    <panel_attributes>Package::javax.swing.JFrame (API JAVA)
+JFrame
+--
+....
+--
+....
+--</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1960</x>
+      <y>126</y>
+      <w>21</w>
+      <h>126</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;160.0</additional_attributes>
+  </element>
+</diagram>
