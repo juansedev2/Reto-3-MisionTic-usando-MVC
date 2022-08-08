@@ -15,7 +15,7 @@ public class Controlador {
     // Esta clase controlado está destinada al tratamiento de la información, quiero separar en lo posible, la lógica del procesamiento de datos al momento de calcularlos
     // Atributos de la clase
     private String cadena_datos;  // Cadena enviada desde la interfaz con los datos del cuerpo de agua
-    private OperadorCuerpoDeAgua operadorAgua;  // Realizo agregación del operador del cuerpo de agua para que este realice el tratamiento de la información
+    private OperadorCuerpoDeAgua operadorAgua;  // Realizo asociación del operador del cuerpo de agua para que este realice el tratamiento de la información
     
     // Constructor
     public Controlador(){

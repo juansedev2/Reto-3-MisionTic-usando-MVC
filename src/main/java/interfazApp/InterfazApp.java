@@ -328,7 +328,7 @@ public final class InterfazApp extends javax.swing.JFrame {  // Una clase final 
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
          // TODO add your handling code here:
-         // BOTON DE REINICAR EL PROGRAMA
+         // BOTON DE REINICIAR EL PROGRAMA
          reiniciarCampos();
          vaciarAreasTexto();
          // Reiniciar el controlador para que elimine los datos
